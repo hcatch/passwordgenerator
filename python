@@ -1,0 +1,12 @@
+import random
+import string
+
+letters=input("Write a short sentence with no spaces ")
+age=input("What is your age plus one of your parent's ages ")
+symb=input("Type two random symbols ")
+
+# random string without repeating letters
+def randomString(stringLength=8):
+    return ''.join(random.sample(letters, stringLength))
+
+print("Your password is ", randomString()+age+symb)
